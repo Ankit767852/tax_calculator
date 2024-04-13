@@ -1,0 +1,100 @@
+/* Existing CSS styles */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#fff;
+}
+#age{
+  margin-bottom: 1.5rem;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  background-color:#fff;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding: 20px;
+  border-bottom: 10px;
+  justify-content: space-around;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subutton{
+  margin-top: 2rem;
+  width: 30rem;
+  background-color: blueviolet;
+  margin-left: 4.5rem;
+  border-radius: 4px;
+  
+}
+
+.input-field{
+  margin-top: 1px;
+}
+
+.income{
+  margin-top: 1.5rem;
+}
+.error-icon {
+    display: none;
+    position: relative;
+    top: 5px;
+    margin-top: 2rem;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .error-icon:hover::after {
+    content: attr(data-error);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+  
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding: 15% auto;
+    left: 0;
+    top: 0;
+    width: 50%; 
+    margin-top: 6rem;
+    margin-left: 14rem;  overflow: auto;
+    background-color: #fefefe;
+     
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  
+  
+  .close {
+    color: white;
+    background-color: blueviolet;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 2px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

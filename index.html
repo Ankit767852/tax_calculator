@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tax Calculator</h1>
+    <label class="income">Enter gross annual income:</label>
+    <input type="number" id="income" class="input-field" placeholder="Enter gross annual income">
+
+    <label class="income">Enter extra income:</label>
+    <input type="number" id="income" class="input-field" placeholder="Enter extea income from other source">
+
+    <span class="error-icon" id="income-error"></span>
+    <label class="income">Enter your age:</label>
+
+    <select id="age" class="input-field">
+      <option value="<40">&lt; 40</option>
+      <option value=">=40 <60">&ge; 40 &lt; 60</option>
+      <option value=">=60">&ge; 60</option>
+    </select>
+
+    <span class="error-icon" id="age-error"></span>
+    <label for="deductions">Entertotal applicable deductions:</label>
+    <input type="number" id="deductions" class="input-field" placeholder="Add total applicable deductions">
+    <span class="error-icon" id="deductions-error"></span>
+    <div id="result"></div>
+    <div> <button class="subutton" onclick="validateForm()">Submit</button></div>
+  </div>
+ 
+  
+  <div id="myModal" class="modal">
+    
+    <div class="modal-content"> 
+        <span class="modal-in"><h3>Your overall income will be</h3></span>
+      <div id="modal-result"></div>
+      <span class="modal-tax"><h4>after tax deduction</h4></span>
+      <button class="close">close</button>
+      
+    </div>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
